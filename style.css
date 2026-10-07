@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #092c4c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Welcome Section */
+.hero {
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #092c4c, #1261a0);
+    color: white;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #092c4c;
+    padding: 13px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #eeeeee;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #092c4c;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gray-section {
+    background-color: #f4f6f8;
+}
+
+/* Team Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #092c4c;
+    margin-bottom: 10px;
+}
+
+/* Events */
+.event {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 25px;
+    border-left: 5px solid #1261a0;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+}
+
+.event h3 {
+    color: #092c4c;
+}
+
+/* Contact */
+.contact {
+    background-color: #092c4c;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #051c30;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Mobile Devices */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 5px 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}
